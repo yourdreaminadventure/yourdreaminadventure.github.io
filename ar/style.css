@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(rgb(89, 89, 197), red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+.title{
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-family: cursive;
+}
+.enterdiv{
+  padding-top: 15vh;
+}
+.enterb{
+  height: 4.8cm;
+  width: 4.8cm;
+  border-radius: 50%;
+  border-color: white;
+  background-color: black;
+  font-size: 2cm;
+  color: white;
+}
+.happyboy{
+  width:7cm;
+}
+.readyforadventure{
+  width:10cm;
+}
