@@ -1,0 +1,210 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .payment-container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-details .form-group {
+            width: 48%;
+        }
+
+        .pay-btn {
+            position: relative;
+            padding: 12px 24px;
+            font-size: 16px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            margin: auto;
+        }
+
+        .pay-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .icon-container {
+            position: relative;
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            color: #22c55e;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .default-icon {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .pay-btn:hover .icon {
+            animation: none;
+        }
+
+        .pay-btn:hover .wallet-icon {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .pay-btn:hover .card-icon {
+            animation: iconRotate 2.5s infinite;
+            animation-delay: 0s;
+        }
+
+        .pay-btn:hover .payment-icon {
+            animation: iconRotate 2.5s infinite;
+            animation-delay: 0.5s;
+        }
+
+        .pay-btn:hover .dollar-icon {
+            animation: iconRotate 2.5s infinite;
+            animation-delay: 1s;
+        }
+
+        .pay-btn:hover .check-icon {
+            animation: iconRotate 2.5s infinite;
+            animation-delay: 1.5s;
+        }
+
+        .pay-btn:active .icon {
+            animation: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .pay-btn:active .check-icon {
+            animation: checkmarkAppear 0.6s ease forwards;
+            visibility: visible;
+        }
+
+        .btn-text {
+            font-weight: 600;
+            font-family:
+                system-ui,
+                -apple-system,
+                sans-serif;
+        }
+
+        @keyframes iconRotate {
+            0% {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px) scale(0.5);
+            }
+
+            5% {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0) scale(1);
+            }
+
+            15% {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0) scale(1);
+            }
+
+            20% {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px) scale(0.5);
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px) scale(0.5);
+            }
+        }
+
+        @keyframes checkmarkAppear {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) rotate(-45deg);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2) rotate(0deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
