@@ -15,13 +15,11 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(0, 255, 255, 0.226);
     margin-bottom: 40vh;
-    text-align: left;
+    text-align: right;
     direction: rtl;
+
 }
-.airplane{
-    position: absolute;
-    top:-1cm;
-}
+
 .button-64 {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);

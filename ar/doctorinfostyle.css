@@ -1,5 +1,5 @@
 body{
-    background-image: url("doctor.jpg");
+    background-image: url("doctor.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,10 +17,6 @@ h1{
     margin-bottom: 40vh;
     text-align: right;
     direction: rtl;
-}
-.airplane{
-    position: absolute;
-    top:-1cm;
 }
 .button-64 {
   align-items: center;
