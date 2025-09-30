@@ -7,10 +7,14 @@ body{
 .h1{
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:right;
+    direction:rtl;
 }
 .h2{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:right;
+    direction:rtl;
 }
 .button{
     background-color: white;
@@ -38,4 +42,5 @@ body{
     background-color: grey;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+
 }
