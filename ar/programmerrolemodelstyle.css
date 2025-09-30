@@ -5,8 +5,8 @@ body{
     background-size: cover;
     height: 80vh;
 }
-.teacherimage{
-    width: 300px;
+.Programmerimage{
+    width: 600px;
     height: 300px;
     border-radius: 25%;
     border: 3px solid white;
@@ -16,7 +16,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.teachername{
+.Programmername{
     text-align: center;
     font-size: 30px;
     color: white;
@@ -31,7 +31,7 @@ body{
     text-decoration-color: yellow;
     text-decoration-thickness: 2px;
 }
-.teacherinfo{
+.Programmerinfo{
     text-align: center;
     font-size: 18px;
     color: white;

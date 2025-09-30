@@ -15,10 +15,8 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(0, 255, 255, 0.226);
     margin-bottom: 40vh;
-}
-.airplane{
-    position: absolute;
-    top:-1cm;
+    text-align: right;
+    direction: rtl;
 }
 .button-64 {
   align-items: center;
